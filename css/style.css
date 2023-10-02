@@ -1,4 +1,6 @@
 * {
+
+    font-family: Roboto, sans-serif;
     margin: 0px;
     padding: 0px;
 }
@@ -13,13 +15,15 @@
 
 @media (min-width: 1200px) {}
 
+
 header {
-    background-color: #040A61;
+    background-color: #0F0DFF;
+    width: 100%;
 }
 
 #burger {
     font-size: 60px;
-    color: #4E58E6;
+    color: white;
 }
 
 #burger:hover {
@@ -38,7 +42,7 @@ header {
 
 #search {
     font-size: 60px;
-    color: #4E58E6;
+    color: white;
     text-align: right;
 }
 
@@ -47,10 +51,11 @@ header {
 }
 
 #headerMenu {
-    display: none;
+    width: 100%;
 }
 
 #headerMenu ul {
+    display: none;
     text-align: center;
     padding: 0px;
     list-style: none;
@@ -59,5 +64,33 @@ header {
 
 #headerMenu a {
     text-decoration: none;
-    color: #4E58E6;
+    color: white;
+}
+
+#headerMenu div {
+    display: none;
+    margin: 0px auto 5px auto;
+    width: 90%;
+}
+
+#headerMenu div textarea {
+    width: 100%;
+    border-radius: 10px;
+    resize: none;
+    font-size: 30px;
+}
+
+#mainContainer {
+    margin: 15px;
+}
+
+.conteudo p {
+    font-size: 30px;
+    text-align: justify;
+}
+
+.conteudo img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
 }

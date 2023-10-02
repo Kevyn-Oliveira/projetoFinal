@@ -14,12 +14,13 @@
 <body>
     <header>
         <div id="header-container">
-            <span id="burger" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+            <span id="burger" class="material-symbols-outlined" onclick="clickMenuList()">menu</span>
             <img src="img/joystick.png" alt="">
-            <span id="search" class="material-symbols-outlined">search</span>
+            <span id="search" class="material-symbols-outlined" onclick="clickMenuSearch()">search</span>
         </div>
         <div id="headerMenu">
-            <ul>
+            <div id="headerMenuSearch"><textarea name="" cols="30" rows="1"></textarea></div>
+            <ul id="headerMenuList">
                 <li><a href="">HOME</a></li>
                 <li><a href="">LANÇAMENTOS</a></li>
                 <li><a href="">PROMOÇÕES</a></li>
@@ -27,15 +28,44 @@
         </div>
     </header>
 
+    <div id="mainContainer">
+        <div class="conteudo">
+            <img src="img/imagemjogo1.jpg" alt="">
+            <p>Esse novo jogo te permite construir e gerenciar sua cidade em tempo real!</p>
+        </div>
+        <div class="conteudo">
+            <img src="img/imagemjogo2.jpg" alt="">
+            <p>A simulação nesse jogo foi levada para outro nivel, confira nesse video!</p>
+        </div>
+        <div class="conteudo">
+            <img src="img/imagemjogo3.jpg" alt="">
+            <p>Teste suas habilidades nesse novo simulador de combate realista!</p>
+        </div>
+    </div>
+
 
 
     <script>
-        function clickMenu() {
-            if (headerMenu.style.display == 'block') {
-                headerMenu.style.display = 'none';
+        function clickMenuList() {
+            if (headerMenuList.style.display == 'block') {
+                headerMenuList.style.display = 'none';
             }
             else {
-                headerMenu.style.display = 'block';
+                headerMenuList.style.display = 'block';
+            }
+            if (headerMenuSearch.style.display == "block") {
+                headerMenuSearch.style.display = 'none'
+            }
+        }
+        function clickMenuSearch() {
+            if (headerMenuSearch.style.display == "block") {
+                headerMenuSearch.style.display = 'none'
+            }
+            else {
+                headerMenuSearch.style.display = 'block'
+            }
+            if (headerMenuList.style.display == 'block') {
+                headerMenuList.style.display = 'none';
             }
         }
     </script>
