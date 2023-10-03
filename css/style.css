@@ -393,6 +393,7 @@ body {
         margin: 10px auto;
         display: grid;
         grid-template-columns: 890px 290px;
+        margin-bottom: 100px;
     }
 
     .conteudo {
