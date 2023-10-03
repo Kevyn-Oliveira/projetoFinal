@@ -7,9 +7,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-    <title>Portal Jogos - Home</title>
+    <title>Portal Jogos - Lançamentos</title>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-    <link rel="stylesheet" href="css/flickity.css" media="screen">
+    <link rel="stylesheet" href="css/flickity.min.css" media="screen">
 </head>
 
 <body>
@@ -22,39 +22,31 @@
         <div id="headerMenu">
             <div id="headerMenuSearch"><textarea name="" cols="30" rows="1"></textarea></div>
             <ul id="headerMenuList">
-                <li><a href="index.html" class="ativo">HOME</a></li>
-                <li><a href="lancamentos.html">LANÇAMENTOS</a></li>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="lancamentos.html" class="ativo">LANÇAMENTOS</a></li>
                 <li><a href="">PROMOÇÕES</a></li>
             </ul>
         </div>
     </header>
 
     <div id="mainContainer">
-        <div class="conteudo">
+        <div class="lancamentos">
             <a href="">
-                <img src="img/imagemjogo1.jpg" alt="">
-                <p>Esse novo jogo te permite construir e gerenciar sua cidade em tempo real!</p>
+                <img src="img/jogolancamento1.jpg" alt="">
+                <p>Fungie Hunter, o jogo que promete te fazer odiar ainda mais os fungos</p>
             </a>
         </div>
-        <div class="conteudo">
-            <a href="">
-                <img src="img/imagemjogo2.jpg" alt="">
-                <p>A simulação nesse jogo foi levada para outro nivel, confira nesse video!</p>
-            </a>
+        <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true, "autoPlay": true,
+        "prevNextButtons": false, "pageDots": false}'>
+            <div class="carousel-cell"><img src="img/imagemjogo1.jpg" alt=""></div>
+            <div class="carousel-cell"><img src="img/imagemjogo2.jpg" alt=""></div>
+            <div class="carousel-cell"><img src="img/imagemjogo3.jpg" alt=""></div>
         </div>
-        <div class="conteudo">
-            <a href="">
-                <img src="img/imagemjogo3.jpg" alt="">
-                <p>Teste suas habilidades nesse novo simulador de combate realista!</p>
-            </a>
-        </div>
-        <div class="conteudo last">
-            <a href="">
-                <img src="img/imagemjogo4.jpg" alt="">
-                <p>Esse jogo de terror está bombando entre os fãs de Tim Burton</p>
-            </a>
-        </div>
+
     </div>
+
+
+
 
     <footer>
         <div id="footerContainer">
@@ -71,29 +63,20 @@
 
     <script>
         function clickMenuList() {
-            if (headerMenuList.style.display == 'block') {
-                headerMenuList.style.display = 'none';
-            }
-            else {
+            if (headerMenuList.style.display == ' block') { headerMenuList.style.display = 'none'; } else {
                 headerMenuList.style.display = 'block';
-            }
-            if (headerMenuSearch.style.display == "block") {
+            } if (headerMenuSearch.style.display == "block") {
                 headerMenuSearch.style.display = 'none'
             }
-        }
-        function clickMenuSearch() {
-            if (headerMenuSearch.style.display == "block") {
-                headerMenuSearch.style.display = 'none'
-            }
-            else {
+        } function clickMenuSearch() {
+            if
+                (headerMenuSearch.style.display == "block") { headerMenuSearch.style.display = 'none' } else {
                 headerMenuSearch.style.display = 'block'
-            }
-            if (headerMenuList.style.display == 'block') {
+            } if (headerMenuList.style.display == 'block') {
                 headerMenuList.style.display = 'none';
             }
-        }
-    </script>
-    <script src="/path/to/flickity.pkgd.min.js"></script>
+        } </script>
+    <script src="script/flickity.pkgd.min.js"></script>
 </body>
 
 </html>
