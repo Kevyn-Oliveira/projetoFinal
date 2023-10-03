@@ -19,28 +19,53 @@
             <img src="img/joystick.png" alt="">
             <span id="search" class="material-symbols-outlined" onclick="clickMenuSearch()">search</span>
         </div>
-        <div id="headerMenuSearch"><textarea name="" cols="30" rows="1"></textarea></div>
         <div id="headerMenu">
             <ul id="headerMenuList">
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="lancamentos.html" class="ativo">LANÇAMENTOS</a></li>
-                <li><a href="">PROMOÇÕES</a></li>
+                <li><a href="login.html">LOGIN</a></li>
             </ul>
+            <div id="headerMenuSearch"><textarea name="" cols="30" rows="1"></textarea></div>
         </div>
     </header>
 
     <div id="mainContainer">
-        <div class="lancamentos">
-            <a href="">
-                <img src="img/jogolancamento1.jpg" alt="">
-                <p>Fungie Hunter, o jogo que promete te fazer odiar ainda mais os fungos</p>
-            </a>
+        <div>
+            <div class="lancamentos">
+                <a href=""><img src="img/jogolancamento1.jpg" alt=""></a>
+                <a href="">
+                    <p>Fungie Hunter, o jogo que promete te fazer odiar ainda mais os fungos</p>
+                </a>
+            </div>
+            <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true, "autoPlay": true,
+            "prevNextButtons": false, "pageDots": false}'>
+                <div class="carousel-cell"><img src="img/imagemjogo1.jpg" alt="">
+                    <p>Esse novo jogo te permite construir e gerenciar sua cidade em tempo real!</p>
+                </div>
+                <div class="carousel-cell"><img src="img/imagemjogo2.jpg" alt="">
+                    <p>A simulação nesse jogo foi levada para outro nivel, confira nesse video!</p>
+                </div>
+                <div class="carousel-cell"><img src="img/imagemjogo3.jpg" alt="">
+                    <p>Teste suas habilidades nesse novo simulador de combate realista!</p>
+                </div>
+            </div>
         </div>
-        <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true, "autoPlay": true,
-        "prevNextButtons": false, "pageDots": false}'>
-            <div class="carousel-cell"><img src="img/imagemjogo1.jpg" alt=""></div>
-            <div class="carousel-cell"><img src="img/imagemjogo2.jpg" alt=""></div>
-            <div class="carousel-cell"><img src="img/imagemjogo3.jpg" alt=""></div>
+
+
+        <div id="sideBar">
+            <h1>Ultimas noticias</h1>
+            <div class="sideBarConteudo">
+                <a href="">
+                    <img src="img/jogolancamento1.jpg" alt="">
+                    <p>Confira esse novo jogo!</p>
+                </a>
+            </div>
+            <div class="sideBarConteudo">
+                <a href="">
+                    <img src="img/imagemjogo4.jpg" alt="">
+                    <p>Será que você tem coragem?</p>
+                </a>
+            </div>
         </div>
     </div>
 
