@@ -84,6 +84,16 @@ header {
     margin: 15px;
 }
 
+.conteudo {
+    border-bottom: 1px solid rgb(182, 181, 181);
+    margin-bottom: 30px;
+}
+
+.last {
+    border: none;
+    margin-bottom: 0px;
+}
+
 .conteudo p {
     font-size: 30px;
     text-align: justify;
@@ -93,4 +103,40 @@ header {
     width: 100%;
     max-height: 300px;
     object-fit: cover;
+}
+
+.conteudo a {
+    text-decoration: none;
+    color: black;
+}
+
+footer {
+    background-color: #0F0DFF;
+    padding: 10px;
+}
+
+#footerContainer {
+    color: white;
+}
+
+#footerContainer ul {
+    list-style: none;
+}
+
+#footerContainer li {
+    display: inline;
+    padding: 15px;
+}
+
+#footerContainer a {
+    text-decoration: none;
+    color: white;
+    margin-top: 15px;
+}
+
+#footerContainer p {
+    display: block;
+    text-align: center;
+    font-size: 13px;
+    margin-bottom: 0px;
 }
