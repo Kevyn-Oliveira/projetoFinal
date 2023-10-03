@@ -89,6 +89,8 @@ body {
     /*==============css do conteudo principal===============*/
     #mainContainer {
         margin: 15px;
+        margin-bottom: 100px;
+        min-height: 100vh;
     }
 
     .conteudo {
