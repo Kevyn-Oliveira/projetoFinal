@@ -258,6 +258,8 @@
 
     /*==================css do footer=================*/
     footer {
+        position: absolute;
+        bottom: 0px;
         background-color: #0F0DFF;
         padding: 10px;
     }
