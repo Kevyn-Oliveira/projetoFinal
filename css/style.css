@@ -583,6 +583,7 @@ body {
 
     /*==================css do footer=================*/
     footer {
+        width: 100%;
         background-color: #0F0DFF;
         padding: 10px;
     }
