@@ -4,6 +4,11 @@
     padding: 0px;
 }
 
+body {
+    min-height: 100%vh;
+    position: relative;
+}
+
 @media (max-width: 575.98px) {
 
     /*================css do header===================*/
@@ -201,9 +206,12 @@
         border: 2px solid rgb(182, 181, 181);
         border-radius: 15px;
         width: 90%;
-        margin: 200px auto;
-
+        margin: 50px auto;
         overflow: hidden;
+    }
+
+    #formContainer {
+        padding-bottom: 100px;
     }
 
     #formPicture {
@@ -253,15 +261,20 @@
         margin: 2px auto;
     }
 
-    form * {}
-
+    #page {
+        position: relative;
+        min-height: 100vh;
+    }
 
     /*==================css do footer=================*/
     footer {
         position: absolute;
         bottom: 0px;
+        width: 100%;
+        min-width: 350px;
         background-color: #0F0DFF;
         padding: 10px;
+        height: 100px;
     }
 
     #footerContainer {
