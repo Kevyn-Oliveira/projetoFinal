@@ -89,8 +89,7 @@ body {
     /*==============css do conteudo principal===============*/
     #mainContainer {
         margin: 15px;
-        margin-bottom: 100px;
-        min-height: 100vh;
+        padding-bottom: 100px;
     }
 
     .conteudo {
@@ -271,7 +270,7 @@ body {
     /*==================css do footer=================*/
     footer {
         position: absolute;
-        bottom: 0px;
+        bottom: -15px;
         width: 100%;
         min-width: 350px;
         background-color: #0F0DFF;
@@ -395,8 +394,6 @@ body {
         margin: 10px auto;
         display: grid;
         grid-template-columns: 890px 290px;
-        margin-bottom: 100px;
-        min-height: 100vh;
     }
 
     .conteudo {
